@@ -1,0 +1,76 @@
+
+/* ===== PROFESSIONAL FOOTER ===== */
+
+.footer-pro {
+  padding: 4rem 1.5rem 3rem;
+}
+
+.footer-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+}
+
+.footer-role {
+  font-size: 0.95rem;
+  font-weight: 400;
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+
+/* Navigation links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+/* Social icons */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.footer-icons li {
+  list-style: none;
+}
+
+.footer-icons i {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-icons i:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  letter-spacing: 0.04em;
+}

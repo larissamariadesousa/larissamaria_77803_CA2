@@ -1,0 +1,217 @@
+/* ===================== GLOBAL STYLES ===================== */
+
+:root {
+  --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-bg: #0d0d0d;
+  --color-accent: #d63384;
+  --color-text: #f1f1f1;
+  --fs-xl: 1.5rem;
+  --fs-xxxl: 3rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: var(--color-text);
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ===================== HERO SECTION ===================== */
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+/* ===================== BACKGROUND MEDIA ===================== */
+
+.hero-bg-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* ===================== HERO TEXT ===================== */
+
+.hero-text-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text-container h1 {
+  font-size: calc(var(--fs-xxxl) * 1.2);
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.hero-text-container h1 span {
+  color: var(--color-accent);
+}
+
+.hero-text-container h2 {
+  font-size: var(--fs-xl);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* ===================== PROJECTS ===================== */
+
+.projects {
+  text-align: center;
+  padding: 40px 10%;
+  margin-top: -40px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-grid a {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-grid a:hover {
+  background: var(--color-accent);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ===================== FOOTER ===================== */
+
+.footer-pro {
+  padding: 4rem 1.5rem 3rem;
+}
+
+.footer-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+}
+
+.footer-role {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+
+.footer-links,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-icons i {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.footer-icons i:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  letter-spacing: 0.04em;
+}
+
+/* ===================== FIXES / OVERRIDES ===================== */
+
+/* Force hero image size (override Lunevedy defaults) */
+header .col-visual img {
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+}
+
+/* ================= EMAIL BUTTON – HEADER (FIX PROPORTION) ================= */
+
+.btn-email {
+  width: 44px !important;
+  height: 44px !important;
+
+  min-width: 44px !important;
+  min-height: 44px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  border-radius: 50% !important;
+  background-color: #000 !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Remove inherited button styles */
+.btn-email.btn {
+  padding: 0 !important;
+}
+
+/* Icon sizing */
+.btn-email svg {
+  width: 20px;
+  height: 20px;
+  stroke: #ffffff;
+}
+
+/* Hover effect */
+.btn-email:hover {
+  background-color: #111 !important;
+}
